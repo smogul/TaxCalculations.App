@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Individual Tax Calculator </h1>
+</div>
+<br/>
+
+<form class="d-flex" method="get">
+    <input name="postalCode" class="form-control me-sm-2" type="text" placeholder="Enter Postal Code" id="postalCode" />
+    <input name="annualSalary" class="form-control me-sm-2" type="number" placeholder="Enter Annunual Salary" id="annualSalary" />
+    <button class="btn btn-secondary my-2 my-sm-0" type="submit" asp-controller="Home" asp-action="SalaryDetails">
+        Calculate
+    </button>
+</form>
